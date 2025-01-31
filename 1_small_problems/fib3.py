@@ -1,6 +1,15 @@
+'''
+# Python 3.9 now allows for built-in dict type annotations
+# Lines 4 and 6 are no longer needed.
 from typing import Dict
 
 memo : Dict[int, int] = {0: 0, 1: 1} # our base cases
+'''
+
+#Python 3.9 now allows for built-in dict type annotations
+
+memo : dict[int, int] = {0: 0, 1: 1} # our base cases
+
 
 '''
 
@@ -21,4 +30,4 @@ What this does, instead of calculating each time, stores the result of the calcu
 
 This is NOT just for each function call, but even the inside recursive calls. E.g. for fib3(100), it doesn't just check memo for fib3(100), but also as required for the recursive calles fib3(99), which is [n-1], and fib3(98), which is [n-2], and so on.
 '''
-
+print(fib3(100))
