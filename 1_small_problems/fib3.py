@@ -30,4 +30,3 @@ What this does, instead of calculating each time, stores the result of the calcu
 
 This is NOT just for each function call, but even the inside recursive calls. E.g. for fib3(100), it doesn't just check memo for fib3(100), but also as required for the recursive calles fib3(99), which is [n-1], and fib3(98), which is [n-2], and so on.
 '''
-print(fib3(100))
